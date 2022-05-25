@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "199691737353",
+    "firebase_url": "https://project1-aea35-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "project1-aea35",
+    "storage_bucket": "project1-aea35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199691737353:android:73bf33954940ad8bb0dbd8",
+        "android_client_info": {
+          "package_name": "com.example.moreplanesforplanegod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199691737353-drst8hs0v2qkcu5ehoniveh16i9nf9fs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp8kItM8yGKEZy4Gvh0gUZgg1OFZwE8ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199691737353-drst8hs0v2qkcu5ehoniveh16i9nf9fs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199691737353:android:607250f201a1f6feb0dbd8",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199691737353-drst8hs0v2qkcu5ehoniveh16i9nf9fs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp8kItM8yGKEZy4Gvh0gUZgg1OFZwE8ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199691737353-drst8hs0v2qkcu5ehoniveh16i9nf9fs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
