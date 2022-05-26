@@ -2,10 +2,11 @@
     <string name="app_name">MorePlanesForPlaneGod</string>
     <string name="name">name</string>
     <string name="description">description</string>
-    <string name="enginesAmount">enginesAmount</string>
-    <string name="planeLength">planeLength</string>
-    <string name="crew">crew</string>
-    <string name="wingSize">wingSize</string>
-    <string name="wingSize1">wingSizeAlt</string>
+    <string name="enginesAmount">engines amount</string>
+    <string name="planeLength">plane length</string>
+    <string name="crew">crew amount</string>
+    <string name="wingSize">wing size</string>
+    <string name="wingSize1">another wing size</string>
+    <string name="video_link">video link</string>
     <string name="send">send</string>
 </resources>

@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     int crew = 0;
     float wingSize = 0;
     float wingSize1 = 0;
+    String video_link = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editTextCrew = findViewById(R.id.crew);
         EditText editTextWingSize = findViewById(R.id.wingSize);
         EditText editTextWingSize1 = findViewById(R.id.wingSize1);
+        EditText editTextVideo_link = findViewById(R.id.video_link);
         ImageView planeImg = findViewById(R.id.planeImg);
         Button send = findViewById(R.id.sendTheBaby);
         ActivityResultLauncher<String> nyeso =
@@ -99,11 +101,12 @@ public class MainActivity extends AppCompatActivity {
                     crew = Integer.parseInt(editTextCrew.getText().toString());
                     wingSize = Float.parseFloat(editTextWingSize.getText().toString());
                     wingSize1 = Float.parseFloat(editTextWingSize1.getText().toString());
+                    video_link = editTextVideo_link.getText().toString();
                 } catch (NumberFormatException  e) {
                     Toast.makeText(getApplicationContext(), "wrong number", Toast.LENGTH_LONG).show();
                     return;
                 }
-                if (name.equals("")||description.equals("")) {
+                if (name.equals("")||description.equals("")||video_link.equals("")) {
                     Toast.makeText(getApplicationContext(), "ayo no not filled strings allowed", Toast.LENGTH_LONG).show(); return;}
                 StorageReference planeRef = storageRef.child((name+".jpg").replace(" ", "_"));
                 UploadTask uploadTask = planeRef.putBytes(byteArrayOutputStream.toByteArray());
@@ -112,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(Uri uri) {
                         image_src = uri.toString();
-                        Plane plane = new Plane(image_src, name, description, enginesAmount, planeLength, crew, wingSize, wingSize1);
+                        Plane plane = new Plane(video_link, image_src, name, description, enginesAmount, planeLength, crew, wingSize, wingSize1);
                         Log.d("plane_check", plane.toString());
                         Toast.makeText(getApplicationContext(), "sent!", Toast.LENGTH_LONG).show();
                         DatabaseReference mRef =  database.getReference().child(name);

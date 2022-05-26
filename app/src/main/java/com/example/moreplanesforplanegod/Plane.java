@@ -1,6 +1,8 @@
 package com.example.moreplanesforplanegod;
 
 public class Plane {
+
+    private String video_link;
     private String image_src;
     private String name;
     private String description;
@@ -13,10 +15,9 @@ public class Plane {
     public Plane() {
     }
 
-    public Plane(
-            String bitmapKindOf,
-            String name, String description, int enginesAmount, int planeLength, int crew, float wingSize, float wingSize1) {
-        this.image_src = bitmapKindOf;
+    public Plane(String video_link, String image_src, String name, String description, int enginesAmount, int planeLength, int crew, float wingSize, float wingSize1) {
+        this.video_link = video_link;
+        this.image_src = image_src;
         this.name = name;
         this.description = description;
         this.enginesAmount = enginesAmount;
@@ -28,6 +29,14 @@ public class Plane {
 
     public String getImage_src() {
         return image_src;
+    }
+
+    public String getVideo_link() {
+        return video_link;
+    }
+
+    public void setVideo_link(String video_link) {
+        this.video_link = video_link;
     }
 
     public void setImage_src(String image_src) {
